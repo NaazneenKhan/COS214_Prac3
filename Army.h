@@ -1,10 +1,15 @@
 #ifndef ARMY_H
 #define ARMY_H
 
+#include"LegionUnit.h"
+#include"BattleStrategy.h"
+#include"WarArchives.h"
+#include <vector>
+
 class Army {
 
 private:
-	vector<LegionUnit*> legionUnits;
+	std::vector<LegionUnit*> legionUnits;
 
 public:
 	Army();
@@ -14,8 +19,6 @@ public:
 	void removeLegion(LegionUnit* legion);
 
 	void executeStrategy();
-
-	void saveStrategy(TacticalMemento* memento);
 
 	void setStrategy(BattleStrategy* strategy);
 
