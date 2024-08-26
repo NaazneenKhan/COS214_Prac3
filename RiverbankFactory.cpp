@@ -13,6 +13,5 @@ Artillery* RiverbankFactory::createArtillery() {
 }
 
 Artillery* RiverbankFactory::deployArtillery() {
-	// TODO - implement RiverbankFactory::deployArtillery
-	throw "Not yet implemented";
+	return new RiverbankArtillery;
 }

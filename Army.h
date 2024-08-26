@@ -28,6 +28,8 @@ public:
 	void saveStrategy(const std::string& label);
 
 	void loadStrategy(const std::string& label);
+
+	void chooseBestStrategy();
 };
 
 #endif

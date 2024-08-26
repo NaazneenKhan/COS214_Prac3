@@ -1,6 +1,6 @@
 #include "Ambush.h"
+#include <iostream>
 
 void Ambush::engage() {
-	// TODO - implement Ambush::engage
-	throw "Not yet implemented";
+	std::cout << "Laying an ambush!" << std::endl;
 }

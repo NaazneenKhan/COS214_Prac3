@@ -13,6 +13,5 @@ Artillery* WoodlandFactory::createArtillery() {
 }
 
 Artillery* WoodlandFactory::deployArtillery() {
-	// TODO - implement WoodlandFactory::deployArtillery
-	throw "Not yet implemented";
+	return new WoodlandArtillery;
 }

@@ -46,3 +46,10 @@ void Army::loadStrategy(const std::string &label)
 		currentStrategy->restoreMemento(memento);
 	}
 }
+
+void Army::chooseBestStrategy()
+{
+	loadStrategy("lastSuccessfulStrategy"); // spec says based pn previous results??
+
+    executeStrategy();  // Execute the loaded strategy
+}

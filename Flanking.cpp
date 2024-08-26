@@ -1,6 +1,7 @@
 #include "Flanking.h"
+#include <iostream>
+
 
 void Flanking::engage() {
-	// TODO - implement Flanking::engage
-	throw "Not yet implemented";
+	std::cout << "Executing flanking maneuver!" << std::endl;
 }

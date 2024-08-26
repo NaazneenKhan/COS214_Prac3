@@ -1,6 +1,6 @@
 #include "Fortification.h"
+#include <iostream>
 
 void Fortification::engage() {
-	// TODO - implement Fortification::engage
-	throw "Not yet implemented";
+	std::cout << "Fortifying positions!" << std::endl;
 }

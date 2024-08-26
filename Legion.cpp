@@ -19,7 +19,7 @@ void Legion::move()
 void Legion::attack()
 {
     for (auto unit : units) {
-		unit->attactk();
+		unit->attack();
 	}
 }
 

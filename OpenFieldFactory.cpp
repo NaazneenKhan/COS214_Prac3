@@ -13,6 +13,5 @@ Artillery* OpenFieldFactory::createArtillery() {
 }
 
 Artillery* OpenFieldFactory::deployArtillery() {
-	// TODO - implement OpenFieldFactory::deployArtillery
-	throw "Not yet implemented";
+	return new OpenFieldArtillery;
 }
