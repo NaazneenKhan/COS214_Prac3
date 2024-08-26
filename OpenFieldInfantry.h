@@ -1,7 +1,8 @@
 #ifndef OPENFIELDINFANTRY_H
 #define OPENFIELDINFANTRY_H
+#include "Infantry.h"
 
-class OpenFieldInfantry : Infantry {
+class OpenFieldInfantry : public Infantry {
 
 
 public:

@@ -1,7 +1,9 @@
 #ifndef OPENFIELDFACTORY_H
 #define OPENFIELDFACTORY_H
+#include "LegionFactory.h"
+#include "LegionUnit.h"
 
-class OpenFieldFactory : LegionFactory {
+class OpenFieldFactory : public LegionFactory {
 
 
 public:

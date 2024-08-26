@@ -1,7 +1,9 @@
 #ifndef WOODLANDFACTORY_H
 #define WOODLANDFACTORY_H
+#include "LegionFactory.h"
+#include "LegionUnit.h"
 
-class WoodlandFactory : LegionFactory {
+class WoodlandFactory : public LegionFactory {
 
 
 public:

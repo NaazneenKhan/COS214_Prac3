@@ -1,7 +1,10 @@
 #ifndef LEGION_H
 #define LEGION_H
+#include "LegionUnit.h"
+#include <vector>
+using namespace std;
 
-class Legion : LegionUnit {
+class Legion : public LegionUnit {
 
 private:
 	vector<LegionUnit*> units;

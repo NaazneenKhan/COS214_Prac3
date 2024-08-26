@@ -1,7 +1,8 @@
 #ifndef WOODLANDINFANTRY_H
 #define WOODLANDINFANTRY_H
+#include "Infantry.h"
 
-class WoodlandInfantry : Infantry {
+class WoodlandInfantry : public Infantry {
 
 
 public:

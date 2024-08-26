@@ -1,7 +1,8 @@
 #ifndef RIVERBANKINFANTRY_H
 #define RIVERBANKINFANTRY_H
+#include "Infantry.h"
 
-class RiverbankInfantry : Infantry {
+class RiverbankInfantry : public Infantry {
 
 
 public:
