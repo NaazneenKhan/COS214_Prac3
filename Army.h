@@ -1,5 +1,10 @@
 #ifndef ARMY_H
 #define ARMY_H
+#include "LegionUnit.h"
+#include "TacticalMemento.h"
+#include "BattleStrategy.h"
+#include <vector>
+using namespace std;
 
 class Army {
 

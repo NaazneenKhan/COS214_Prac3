@@ -1,7 +1,8 @@
 #ifndef RIVERBANKARTILLERY_H
 #define RIVERBANKARTILLERY_H
+#include "Artillery.h"
 
-class RiverbankArtillery : Artillery {
+class RiverbankArtillery : public Artillery {
 
 
 public:

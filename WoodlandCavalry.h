@@ -1,7 +1,8 @@
 #ifndef WOODLANDCAVALRY_H
 #define WOODLANDCAVALRY_H
+#include "Cavalry.h"
 
-class WoodlandCavalry : Cavalry {
+class WoodlandCavalry : public Cavalry {
 
 
 public:

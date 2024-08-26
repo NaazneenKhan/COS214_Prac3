@@ -1,7 +1,8 @@
 #ifndef RIVERBANKCAVALRY_H
 #define RIVERBANKCAVALRY_H
+#include "Cavalry.h"
 
-class RiverbankCavalry : Cavalry {
+class RiverbankCavalry : public Cavalry {
 
 
 public:

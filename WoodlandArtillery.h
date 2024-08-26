@@ -1,7 +1,8 @@
 #ifndef WOODLANDARTILLERY_H
 #define WOODLANDARTILLERY_H
+#include "Artillery.h"
 
-class WoodlandArtillery : Artillery {
+class WoodlandArtillery : public Artillery {
 
 
 public:

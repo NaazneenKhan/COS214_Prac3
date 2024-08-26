@@ -1,7 +1,8 @@
 #ifndef OPENFIELDARTILLERY_H
 #define OPENFIELDARTILLERY_H
+#include "Artillery.h"
 
-class OpenFieldArtillery : Artillery {
+class OpenFieldArtillery : public Artillery {
 
 
 public:
