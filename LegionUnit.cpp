@@ -10,7 +10,7 @@ void LegionUnit::move() {
 	throw "Not yet implemented";
 }
 
-void LegionUnit::attactk() {
+void LegionUnit::attack() {
 	// TODO - implement LegionUnit::attactk
 	throw "Not yet implemented";
 }

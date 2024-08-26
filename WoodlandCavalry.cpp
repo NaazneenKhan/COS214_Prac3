@@ -1,11 +1,10 @@
 #include "WoodlandCavalry.h"
+#include <iostream>
 
 void WoodlandCavalry::move() {
-	// TODO - implement WoodlandCavalry::move
-	throw "Not yet implemented";
+	std::cout << "Woodland Cavalry navigates through the dense forest with agility, using the terrain to stay hidden and move strategically." << std::endl;
 }
 
 void WoodlandCavalry::attack() {
-	// TODO - implement WoodlandCavalry::attack
-	throw "Not yet implemented";
+	std::cout << "Woodland Cavalry charges from concealed positions in the forest, utilizing surprise and speed for effective attacks." << std::endl;
 }

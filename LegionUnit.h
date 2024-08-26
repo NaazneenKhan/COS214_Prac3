@@ -8,9 +8,9 @@ private:
 	void virtual_LegionUnit();
 
 public:
-	void move();
+	virtual void move() = 0;
 
-	void attactk();
+	virtual void attack() = 0;
 
 	void add(LegionUnit* component);
 

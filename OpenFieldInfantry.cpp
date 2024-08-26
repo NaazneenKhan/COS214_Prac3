@@ -1,11 +1,11 @@
 #include "OpenFieldInfantry.h"
+#include <iostream>
+using namespace std;
 
 void OpenFieldInfantry::move() {
-	// TODO - implement OpenFieldInfantry::move
-	throw "Not yet implemented";
+	cout << "OpenField Infantry marches steadily across open fields, maintaining formation." << endl;
 }
 
 void OpenFieldInfantry::attack() {
-	// TODO - implement OpenFieldInfantry::attack
-	throw "Not yet implemented";
+	cout << "OpenField Infantry engages the enemy with disciplined formations and steady fire." << endl;
 }

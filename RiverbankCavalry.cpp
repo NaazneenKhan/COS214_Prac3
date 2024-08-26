@@ -1,11 +1,10 @@
 #include "RiverbankCavalry.h"
+#include <iostream>
 
 void RiverbankCavalry::move() {
-	// TODO - implement RiverbankCavalry::move
-	throw "Not yet implemented";
+	std::cout << "Riverbank Cavalry maneuvers along the riverbank, taking advantage of the terrain for tactical positioning." << std::endl;
 }
 
 void RiverbankCavalry::attack() {
-	// TODO - implement RiverbankCavalry::attack
-	throw "Not yet implemented";
+	std::cout << "Riverbank Cavalry launches a swift attack, utilizing the riverbank terrain for cover and surprise." << std::endl;
 }
