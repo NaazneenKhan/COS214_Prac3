@@ -1,8 +1,6 @@
 #ifndef WARARCHIVES_H
 #define WARARCHIVES_H
-#include "TacticalMemento.h"
-#include <map>
-using namespace std;
+
 
 #include <map>
 #include <string>
