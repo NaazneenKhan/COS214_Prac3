@@ -1,0 +1,4 @@
+READ ME 
+
+- please add the includes to the h files(vpp doesn't add them when you make it)
+- there might be errors in some declarations(virtual, const etc.( these are hard to do in vpp - forgive me))

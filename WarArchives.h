@@ -4,17 +4,21 @@
 #include <map>
 using namespace std;
 
+#include <map>
+#include <string>
+#include "TacticalMemento.h"
+
 class WarArchives {
 
 private:
-	map<string, TacticalMemento*> archives;
+	std::map<std::string, TacticalMemento*> archives;
 
 public:
-	void addTacticalMemento(TacticalMemento* memento, string& const_label);
+	void addTacticalMemento(TacticalMemento* memento,const std::string& label);
 
-	void removeTacticalMemento(string& const_label);
+	void removeTacticalMemento(const std::string& label);
 
-	void getTacticalMemento(string& const_label);
+	TacticalMemento* getTacticalMemento (const std::string& label);
 };
 
 #endif

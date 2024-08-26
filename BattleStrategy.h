@@ -2,15 +2,16 @@
 #define BATTLESTRATEGY_H
 #include "TacticalMemento.h"
 
+#include "TacticalMemento.h"
+
 class BattleStrategy {
 
 private:
 	BattleStrategy* currentStrategy;
 
-	void virtual_BattleStrategy();
-
 public:
-	void virtual_engage();
+    virtual ~BattleStrategy() = default;
+	virtual void engage()= 0;
 
 	TacticalMemento* createMemento();
 

@@ -6,13 +6,21 @@
 #include <vector>
 using namespace std;
 
+#include"LegionUnit.h"
+#include"BattleStrategy.h"
+#include"WarArchives.h"
+#include <vector>
+
 class Army {
 
 private:
-	vector<LegionUnit*> legionUnits;
-
+	std::vector<LegionUnit*> legionUnits;
+    BattleStrategy* currentStrategy;
+    WarArchives archives;
 public:
 	Army();
+
+	~Army();
 
 	void addLegion(LegionUnit* legion);
 
@@ -20,11 +28,11 @@ public:
 
 	void executeStrategy();
 
-	void saveStrategy(TacticalMemento* memento);
-
 	void setStrategy(BattleStrategy* strategy);
 
-	void operation();
+	void saveStrategy(const std::string& label);
+
+	void loadStrategy(const std::string& label);
 };
 
 #endif
