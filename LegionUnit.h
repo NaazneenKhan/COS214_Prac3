@@ -4,13 +4,13 @@
 class LegionUnit {
 
 
-private:
-	void virtual_LegionUnit();
-
 public:
-	void move();
+	virtual ~LegionUnit() = default;
 
-	void attactk();
+
+	virtual void move() = 0;
+
+	virtual void attactk() = 0;
 
 	void add(LegionUnit* component);
 
