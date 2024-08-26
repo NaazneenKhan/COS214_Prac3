@@ -6,13 +6,10 @@ class Artillery : public LegionUnit {
 
 
 public:
-	void move();
+	virtual void move() =0 ;
 
-	void attack();
+	virtual void attack()=0;
 
-	void add(LegionUnit* component);
-
-	void remove(LegionUnit* component);
 };
 
 #endif

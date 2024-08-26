@@ -6,6 +6,14 @@ void RiverbankInfantry::move() {
 
 }
 
-void RiverbankInfantry::attack() {
+void RiverbankInfantry::attack(int legionSize) {
 	std::cout << "Riverbank Infantry engages the enemy with precision, using the riverbank for cover and tactical advantage." << std::endl;
+    
+	for (int i = 0; i < legionSize; ++i) {
+        for (int j = 0; j < 5; ++j) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
 }
+

@@ -8,7 +8,7 @@ class OpenFieldInfantry : public Infantry {
 public:
 	void move();
 
-	void attack();
+	void attack(int legionSize);
 };
 
 #endif
