@@ -79,6 +79,10 @@ BattleStrategy* Army::getStrategy() const {
     return currentStrategy;
 }
 
+std::vector<LegionUnit*>& Army::getLegionUnits() {
+    return legionUnits;
+}
+
 void Army::saveStrategy(const std::string &label)
 {
     if (currentStrategy) {

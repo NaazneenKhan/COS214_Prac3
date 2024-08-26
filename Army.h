@@ -33,6 +33,8 @@ public:
 
 	BattleStrategy* getStrategy() const;
 
+	std::vector<LegionUnit*>& getLegionUnits();
+
 	void saveStrategy(const std::string& label);
 
 	void loadStrategy(const std::string& label);
