@@ -1,16 +1,16 @@
 #include "RiverbankFactory.h"
 
-LegionUnit* RiverbankFactory::createCavalry() {
+Cavalry* RiverbankFactory::createCavalry() {
 	// TODO - implement RiverbankFactory::createCavalry
 	throw "Not yet implemented";
 }
 
-LegionUnit* RiverbankFactory::createInfantry() {
+Infantry* RiverbankFactory::createInfantry() {
 	// TODO - implement RiverbankFactory::createInfantry
 	throw "Not yet implemented";
 }
 
-LegionUnit* RiverbankFactory::createArtillery() {
+Artillery* RiverbankFactory::createArtillery() {
 	// TODO - implement RiverbankFactory::createArtillery
 	throw "Not yet implemented";
 }
