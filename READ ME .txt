@@ -2,3 +2,7 @@ READ ME
 
 - please add the includes to the h files(vpp doesn't add them when you make it)
 - there might be errors in some declarations(virtual, const etc.( these are hard to do in vpp - forgive me))
+
+
+- for the move and the attack i think it would be cool if we did what we did the previous time !
+- and we also need to find a creative way to do the stratgeys !
