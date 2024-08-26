@@ -1,5 +1,8 @@
 #ifndef LEGIONFACTORY_H
 #define LEGIONFACTORY_H
+#include "Infantry.h"
+#include "Cavalry.h"
+#include "Artillery.h"
 
 class LegionFactory {
 
@@ -8,11 +11,13 @@ private:
 	void virtual_LegionFactory();
 
 public:
-	LegionUnit* virtual_createInfantry();
+	virtual Infantry* createInfantry() = 0;
 
-	LegionUnit* virtual_createCavalry();
+	virtual Cavalry* createCavalry() = 0;
 
-	LegionUnit* virtual_createArtillery();
+	virtual Artillery* createArtillery() = 0;
+
+	
 };
 
 #endif

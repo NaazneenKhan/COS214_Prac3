@@ -7,11 +7,11 @@ class RiverbankFactory : public LegionFactory {
 
 
 public:
-	LegionUnit* createCavalry();
+	Cavalry* createCavalry();
 
-	LegionUnit* createInfantry();
+	Infantry* createInfantry();
 
-	LegionUnit* createArtillery();
+	Artillery* createArtillery();
 };
 
 #endif

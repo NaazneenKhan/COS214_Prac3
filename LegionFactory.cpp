@@ -5,17 +5,17 @@ void LegionFactory::virtual_LegionFactory() {
 	throw "Not yet implemented";
 }
 
-LegionUnit* LegionFactory::virtual_createInfantry() {
+Infantry* LegionFactory::createInfantry() {
 	// TODO - implement LegionFactory::virtual createInfantry
 	throw "Not yet implemented";
 }
 
-LegionUnit* LegionFactory::virtual_createCavalry() {
+Cavalry* LegionFactory::createCavalry() {
 	// TODO - implement LegionFactory::virtual createCavalry
 	throw "Not yet implemented";
 }
 
-LegionUnit* LegionFactory::virtual_createArtillery() {
+Artillery* LegionFactory::createArtillery() {
 	// TODO - implement LegionFactory::virtual createArtillery
 	throw "Not yet implemented";
 }
