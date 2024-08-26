@@ -8,7 +8,7 @@ class RiverbankCavalry : public Cavalry {
 public:
 	void move();
 
-	void attack();
+	void attack(int legionSize);
 };
 
 #endif

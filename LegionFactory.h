@@ -6,10 +6,6 @@
 
 class LegionFactory {
 
-
-private:
-	void virtual_LegionFactory();
-
 public:
 	virtual Infantry* createInfantry() = 0;
 

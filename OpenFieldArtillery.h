@@ -8,7 +8,7 @@ class OpenFieldArtillery : public Artillery {
 public:
 	void move();
 
-	void attack();
+	void attack(int legionSize);
 };
 
 #endif

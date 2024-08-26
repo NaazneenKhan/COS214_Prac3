@@ -8,7 +8,7 @@ class WoodlandCavalry : public Cavalry {
 public:
 	void move();
 
-	void attack();
+	void attack(int legionSize);
 };
 
 #endif

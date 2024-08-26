@@ -6,6 +6,7 @@ class Flanking : public BattleStrategy {
 
 
 public:
+   
 	void engage();
 };
 

@@ -1,9 +1,5 @@
 #include "LegionFactory.h"
 
-void LegionFactory::virtual_LegionFactory() {
-	// TODO - implement LegionFactory::virtual LegionFactory
-	throw "Not yet implemented";
-}
 
 Infantry* LegionFactory::createInfantry() {
 	// TODO - implement LegionFactory::virtual createInfantry

@@ -3,7 +3,13 @@
 
 #include"LegionUnit.h"
 #include"BattleStrategy.h"
+#include "Flanking.h"       // Include the header for FlankingStrategy
+#include "Fortification.h"  // Include the header for FortificationStrategy
+#include "Ambush.h"  
+#include"Fortification.h"
+#include"Ambush.h"
 #include"WarArchives.h"
+#include "LegionFactory.h"
 #include <vector>
 
 class Army {
@@ -13,7 +19,7 @@ private:
     BattleStrategy* currentStrategy;
     WarArchives archives;
 public:
-	Army();
+	Army(LegionFactory* factory);
 
 	~Army();
 
@@ -24,6 +30,10 @@ public:
 	void executeStrategy();
 
 	void setStrategy(BattleStrategy* strategy);
+
+	BattleStrategy* getStrategy() const;
+
+	std::vector<LegionUnit*>& getLegionUnits();
 
 	void saveStrategy(const std::string& label);
 
