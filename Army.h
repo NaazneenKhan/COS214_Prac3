@@ -10,9 +10,12 @@ class Army {
 
 private:
 	std::vector<LegionUnit*> legionUnits;
-
+    BattleStrategy* currentStrategy;
+    WarArchives archives;
 public:
 	Army();
+
+	~Army();
 
 	void addLegion(LegionUnit* legion);
 
@@ -22,7 +25,9 @@ public:
 
 	void setStrategy(BattleStrategy* strategy);
 
-	void operation();
+	void saveStrategy(const std::string& label);
+
+	void loadStrategy(const std::string& label);
 };
 
 #endif

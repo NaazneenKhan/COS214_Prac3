@@ -1,15 +1,17 @@
 #ifndef TACTICALMEMENTO_H
 #define TACTICALMEMENTO_H
 
+#include "BattleStrategy.h"
+
 class TacticalMemento {
 
 private:
-	BattleStrategy* saveStrategy;
+	BattleStrategy* savedStrategy;
 
 public:
-	TacticalMemento(BattleStrategy strategy);
+	TacticalMemento(BattleStrategy* strategy);
 
-	BattleStrategy* getSavedStrategy();
+	BattleStrategy* getSavedStrategy() const ;
 };
 
 #endif

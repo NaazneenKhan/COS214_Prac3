@@ -1,31 +1,48 @@
 #include "Army.h"
 
-void Army::addLegion(LegionUnit* legion) {
-	// TODO - implement Army::addLegion
-	throw "Not yet implemented";
+Army::Army()
+{
+}
+
+Army::~Army()
+{
+	for (auto unit : legionUnits) {
+		delete unit;
+	}
+	delete currentStrategy;
+}
+
+void Army::addLegion(LegionUnit *legion)
+{
+   legionUnits.push_back(legion);
 }
 
 void Army::removeLegion(LegionUnit* legion) {
-	// TODO - implement Army::removeLegion
-	throw "Not yet implemented";
+	legionUnits.erase(std::remove(legionUnits.begin(), legionUnits.end(), legion), legionUnits.end());
+	
 }
 
 void Army::executeStrategy() {
-	// TODO - implement Army::executeStrategy
-	throw "Not yet implemented";
-}
-
-void Army::saveStrategy(TacticalMemento* memento) {
-	// TODO - implement Army::saveStrategy
-	throw "Not yet implemented";
+	if (currentStrategy) {
+		currentStrategy->engage();
+	}
 }
 
 void Army::setStrategy(BattleStrategy* strategy) {
-	// TODO - implement Army::setStrategy
-	throw "Not yet implemented";
+	currentStrategy = strategy;
 }
 
-void Army::operation() {
-	// TODO - implement Army::operation
-	throw "Not yet implemented";
+void Army::saveStrategy(const std::string &label)
+{
+	if (currentStrategy) {
+		archives.addTacticalMemento(currentStrategy->createMemento(), label);
+	}
+}
+
+void Army::loadStrategy(const std::string &label)
+{
+	TacticalMemento* memento = archives.getTacticalMemento(label);
+	if (memento && currentStrategy) {
+		currentStrategy->restoreMemento(memento);
+	}
 }
