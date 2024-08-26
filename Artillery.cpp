@@ -1,4 +1,5 @@
 #include "Artillery.h"
+#include <iostream>
 
 void Artillery::move() {
 	// TODO - implement Artillery::move

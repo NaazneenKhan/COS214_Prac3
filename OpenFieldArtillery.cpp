@@ -1,11 +1,11 @@
 #include "OpenFieldArtillery.h"
+#include <iostream>
+using namespace std;
 
 void OpenFieldArtillery::move() {
-	// TODO - implement OpenFieldArtillery::move
-	throw "Not yet implemented";
+	cout << "OpenField Artillery moves across the fields." << endl;
 }
 
 void OpenFieldArtillery::attack() {
-	// TODO - implement OpenFieldArtillery::attack
-	throw "Not yet implemented";
+	cout << "OpenField Artillery fires at long range targets." << endl;
 }

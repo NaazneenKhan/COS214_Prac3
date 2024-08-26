@@ -1,16 +1,18 @@
 #include "WoodlandFactory.h"
 
 Cavalry* WoodlandFactory::createCavalry() {
-	// TODO - implement WoodlandFactory::createCavalry
-	throw "Not yet implemented";
+	return new WoodlandCavalry;
 }
 
 Infantry* WoodlandFactory::createInfantry() {
-	// TODO - implement WoodlandFactory::createInfantry
-	throw "Not yet implemented";
+	return new WoodlandInfantry;
 }
 
 Artillery* WoodlandFactory::createArtillery() {
-	// TODO - implement WoodlandFactory::createArtillery
+	return new WoodlandArtillery;
+}
+
+Artillery* WoodlandFactory::deployArtillery() {
+	// TODO - implement WoodlandFactory::deployArtillery
 	throw "Not yet implemented";
 }

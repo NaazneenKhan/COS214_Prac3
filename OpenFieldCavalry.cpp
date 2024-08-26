@@ -1,11 +1,11 @@
 #include "OpenFieldCavalry.h"
+#include <iostream>
+using namespace std;
 
 void OpenFieldCavalry::move() {
-	// TODO - implement OpenFieldCavalry::move
-	throw "Not yet implemented";
+	cout << "OpenField Cavalry charges across open fields with great speed." << endl;
 }
 
 void OpenFieldCavalry::attack() {
-	// TODO - implement OpenFieldCavalry::attack
-	throw "Not yet implemented";
+	cout << "OpenField Cavalry performs a swift and powerful charge against the enemy." << endl;
 }

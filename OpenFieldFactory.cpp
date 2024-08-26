@@ -1,16 +1,18 @@
 #include "OpenFieldFactory.h"
 
 Cavalry* OpenFieldFactory::createCavalry() {
-	// TODO - implement OpenFieldFactory::createCavalry
-	throw "Not yet implemented";
+	return new OpenFieldCavalry;
 }
 
 Infantry* OpenFieldFactory::createInfantry() {
-	// TODO - implement OpenFieldFactory::createInfantry
-	throw "Not yet implemented";
+	return new OpenFieldInfantry;
 }
 
 Artillery* OpenFieldFactory::createArtillery() {
-	// TODO - implement OpenFieldFactory::createArtillery
+	return new OpenFieldArtillery;
+}
+
+Artillery* OpenFieldFactory::deployArtillery() {
+	// TODO - implement OpenFieldFactory::deployArtillery
 	throw "Not yet implemented";
 }

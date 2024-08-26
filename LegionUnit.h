@@ -5,12 +5,9 @@ class LegionUnit {
 
 
 public:
-	virtual ~LegionUnit() = default;
-
-
 	virtual void move() = 0;
 
-	virtual void attactk() = 0;
+	virtual void attack() = 0;
 
 	void add(LegionUnit* component);
 
