@@ -3,17 +3,24 @@
 #include <algorithm>
 #include "Legion.h"
 
-Army::Army(LegionFactory* factory)
-{
-    int infantryCount, cavalryCount, artilleryCount;
-    std::cout << "Enter number of Infantry units: ";
-    std::cin >> infantryCount;
-    std::cout << "Enter number of Cavalry units: ";
-    std::cin >> cavalryCount;
-    std::cout << "Enter number of Artillery units: ";
-    std::cin >> artilleryCount;
+#include <iostream>
+#include <string>
+#include "Army.h"
 
-	
+Army::Army(LegionFactory* factory) {
+    int infantryCount, cavalryCount, artilleryCount;
+
+    // Prompt for Infantry units
+    std::cout << "\033[1;34m" << "Enter number of Infantry units: " << "\033[0m";
+    std::cin >> infantryCount;
+
+    // Prompt for Cavalry units
+    std::cout << "\033[1;32m" << "Enter number of Cavalry units: " << "\033[0m";
+    std::cin >> cavalryCount;
+
+    // Prompt for Artillery units
+    std::cout << "\033[1;31m" << "Enter number of Artillery units: " << "\033[0m";
+    std::cin >> artilleryCount;
 
     for (int i = 0; i < infantryCount; ++i) {
         addLegion(factory->createInfantry());
@@ -26,9 +33,10 @@ Army::Army(LegionFactory* factory)
     }
 
     int strategyChoice;
-    std::cout << "Choose strategy:\n1. Flanking\n2. Fortification\n3. Ambush\n";
+
+    // Prompt for strategy choice
+    std::cout << "\033[1;36m" << "Choose strategy:\n1. Flanking\n2. Fortification\n3. Ambush\n" << "\033[0m";
     std::cin >> strategyChoice;
-	
 
     switch (strategyChoice) {
         case 1:
@@ -41,11 +49,13 @@ Army::Army(LegionFactory* factory)
             setStrategy(new Ambush());
             break;
         default:
-            std::cout << "Invalid choice, defaulting to Flanking.\n";
+            // Invalid choice warning
+            std::cout << "\033[1;31m" << "Invalid choice, defaulting to Flanking.\n" << "\033[0m";
             setStrategy(new Flanking());
             break;
     }
 }
+
 
 Army::~Army()
 {

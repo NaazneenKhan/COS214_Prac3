@@ -1,61 +1,97 @@
-#include "Army.h"
-#include "WoodlandFactory.h"
-#include "RiverbankFactory.h"
-#include "OpenFieldFactory.h"
-#include <iostream>
+// #include "Army.h"
+// #include "Legion.h"
+// #include "Flanking.h"
+// #include "Fortification.h"
+// #include "Ambush.h"
+// #include "WoodlandFactory.h"
+// #include "RiverbankFactory.h"
+// #include "OpenFieldFactory.h"
+// #include <iostream>
 
-int main() {
-    // Test creating an army with Woodland Legion Factory
-    std::cout << "Creating Woodland Army...\n";
-    LegionFactory* woodlandFactory = new WoodlandFactory();
-    Army* woodlandArmy = new Army(woodlandFactory);
-    woodlandArmy->executeStrategy();
+// int main() {
+//     // Test with WoodlandFactory
+//     LegionFactory* woodlandFactory = new WoodlandFactory();
+//     Army* woodlandArmy = new Army(woodlandFactory);
 
-    // Test creating an army with Riverbank Legion Factory
-    std::cout << "\nCreating Riverbank Army...\n";
-    LegionFactory* riverbankFactory = new RiverbankFactory();
-    Army* riverbankArmy = new Army(riverbankFactory);
-    riverbankArmy->executeStrategy();
+//     // Add dummy Legion units
+//     woodlandArmy->addLegion(woodlandFactory->createInfantry());
+//     woodlandArmy->addLegion(woodlandFactory->createCavalry());
+//     woodlandArmy->addLegion(woodlandFactory->createArtillery());
 
-    // Test creating an army with OpenField Legion Factory
-    std::cout << "\nCreating OpenField Army...\n";
-    LegionFactory* openFieldFactory = new OpenFieldFactory();
-    Army* openFieldArmy = new Army(openFieldFactory);
-    openFieldArmy->executeStrategy();
+//     // Test different strategies
+//     woodlandArmy->setStrategy(new Flanking());
+//     woodlandArmy->executeStrategy();
 
-    // Test saving a strategy
-    std::cout << "\nSaving current strategy for Woodland Army as 'defaultWoodlandStrategy'...\n";
-    woodlandArmy->saveStrategy("defaultWoodlandStrategy");
+//     woodlandArmy->setStrategy(new Fortification());
+//     woodlandArmy->executeStrategy();
 
-    // Test changing the strategy and saving it
-    std::cout << "\nChanging strategy to Fortification and saving as 'fortifiedWoodlandStrategy'...\n";
-    woodlandArmy->setStrategy(new Fortification());
-    woodlandArmy->saveStrategy("fortifiedWoodlandStrategy");
+//     woodlandArmy->setStrategy(new Ambush());
+//     woodlandArmy->executeStrategy();
 
-    // Test loading the previous strategy
-    std::cout << "\nLoading 'defaultWoodlandStrategy' and executing...\n";
-    woodlandArmy->loadStrategy("defaultWoodlandStrategy");
-    woodlandArmy->executeStrategy();
+//     // Test save and load strategy
+//     woodlandArmy->saveStrategy("AmbushStrategy");
+//     woodlandArmy->loadStrategy("AmbushStrategy");
+//     woodlandArmy->executeStrategy();
 
-    // Test removing a legion unit
-    std::cout << "\nRemoving a legion unit from Woodland Army and re-executing strategy...\n";
-    if (!woodlandArmy->getLegionUnits().empty()) {
-        woodlandArmy->removeLegion(woodlandArmy->getLegionUnits().front());
-    }
-    woodlandArmy->executeStrategy();
+//     // Clean up
+//     delete woodlandArmy;
+//     delete woodlandFactory;
 
-    // Test choosing the best strategy based on previous results
-    std::cout << "\nChoosing the best strategy based on previous results for Riverbank Army...\n";
-    riverbankArmy->chooseBestStrategy();
+//     // Test with RiverbankFactory
+//     LegionFactory* riverbankFactory = new RiverbankFactory();
+//     Army* riverbankArmy = new Army(riverbankFactory);
 
-    // Clean up
-    delete woodlandArmy;
-    delete riverbankArmy;
-    delete openFieldArmy;
-    delete woodlandFactory;
-    delete riverbankFactory;
-    delete openFieldFactory;
+//     // Add dummy Legion units
+//     riverbankArmy->addLegion(riverbankFactory->createInfantry());
+//     riverbankArmy->addLegion(riverbankFactory->createCavalry());
+//     riverbankArmy->addLegion(riverbankFactory->createArtillery());
 
-    std::cout << "\nAll tests completed.\n";
-    return 0;
-}
+//     // Test different strategies
+//     riverbankArmy->setStrategy(new Flanking());
+//     riverbankArmy->executeStrategy();
+
+//     riverbankArmy->setStrategy(new Fortification());
+//     riverbankArmy->executeStrategy();
+
+//     riverbankArmy->setStrategy(new Ambush());
+//     riverbankArmy->executeStrategy();
+
+//     // Test save and load strategy
+//     riverbankArmy->saveStrategy("AmbushStrategy");
+//     riverbankArmy->loadStrategy("AmbushStrategy");
+//     riverbankArmy->executeStrategy();
+
+//     // Clean up
+//     delete riverbankArmy;
+//     delete riverbankFactory;
+
+//     // Test with OpenFieldFactory
+//     LegionFactory* openFieldFactory = new OpenFieldFactory();
+//     Army* openFieldArmy = new Army(openFieldFactory);
+
+//     // Add dummy Legion units
+//     openFieldArmy->addLegion(openFieldFactory->createInfantry());
+//     openFieldArmy->addLegion(openFieldFactory->createCavalry());
+//     openFieldArmy->addLegion(openFieldFactory->createArtillery());
+
+//     // Test different strategies
+//     openFieldArmy->setStrategy(new Flanking());
+//     openFieldArmy->executeStrategy();
+
+//     openFieldArmy->setStrategy(new Fortification());
+//     openFieldArmy->executeStrategy();
+
+//     openFieldArmy->setStrategy(new Ambush());
+//     openFieldArmy->executeStrategy();
+
+//     // Test save and load strategy
+//     openFieldArmy->saveStrategy("AmbushStrategy");
+//     openFieldArmy->loadStrategy("AmbushStrategy");
+//     openFieldArmy->executeStrategy();
+
+//     // Clean up
+//     delete openFieldArmy;
+//     delete openFieldFactory;
+
+//     return 0;
+// }
