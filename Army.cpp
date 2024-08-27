@@ -13,6 +13,8 @@ Army::Army(LegionFactory* factory)
     std::cout << "Enter number of Artillery units: ";
     std::cin >> artilleryCount;
 
+	
+
     for (int i = 0; i < infantryCount; ++i) {
         addLegion(factory->createInfantry());
     }
@@ -26,6 +28,7 @@ Army::Army(LegionFactory* factory)
     int strategyChoice;
     std::cout << "Choose strategy:\n1. Flanking\n2. Fortification\n3. Ambush\n";
     std::cin >> strategyChoice;
+	
 
     switch (strategyChoice) {
         case 1:

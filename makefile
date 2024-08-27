@@ -1,5 +1,5 @@
-OBJS	= TestingMain.o Ambush.o Army.o BattleStrategy.o Flanking.o Fortification.o Legion.o LegionFactory.o LegionUnit.o OpenFieldArtillery.o OpenFieldCavalry.o OpenFieldFactory.o OpenFieldInfantry.o RiverbankArtillery.o RiverbankCavalry.o RiverbankFactory.o RiverbankInfantry.o TacticalMemento.o WarArchives.o WoodlandArtillery.o WoodlandCavalry.o WoodlandFactory.o WoodlandInfantry.o
-SOURCE	= TestingMain.cpp Ambush.cpp Army.cpp BattleStrategy.cpp Flanking.cpp Fortification.cpp Legion.cpp LegionFactory.cpp LegionUnit.cpp OpenFieldArtillery.cpp OpenFieldCavalry.cpp OpenFieldFactory.cpp OpenFieldInfantry.cpp RiverbankArtillery.cpp RiverbankCavalry.cpp RiverbankFactory.cpp RiverbankInfantry.cpp TacticalMemento.cpp WarArchives.cpp WoodlandArtillery.cpp WoodlandCavalry.cpp WoodlandFactory.cpp WoodlandInfantry.cpp
+OBJS	= DemoMain.o Ambush.o Army.o BattleStrategy.o Flanking.o Fortification.o Legion.o LegionFactory.o LegionUnit.o OpenFieldArtillery.o OpenFieldCavalry.o OpenFieldFactory.o OpenFieldInfantry.o RiverbankArtillery.o RiverbankCavalry.o RiverbankFactory.o RiverbankInfantry.o TacticalMemento.o WarArchives.o WoodlandArtillery.o WoodlandCavalry.o WoodlandFactory.o WoodlandInfantry.o
+SOURCE	= DemoMain.cpp Ambush.cpp Army.cpp BattleStrategy.cpp Flanking.cpp Fortification.cpp Legion.cpp LegionFactory.cpp LegionUnit.cpp OpenFieldArtillery.cpp OpenFieldCavalry.cpp OpenFieldFactory.cpp OpenFieldInfantry.cpp RiverbankArtillery.cpp RiverbankCavalry.cpp RiverbankFactory.cpp RiverbankInfantry.cpp TacticalMemento.cpp WarArchives.cpp WoodlandArtillery.cpp WoodlandCavalry.cpp WoodlandFactory.cpp WoodlandInfantry.cpp
 HEADER	= Ambush.h Army.h Artillery.h BattleStrategy.h Cavalry.h Flanking.h Fortification.h Infantry.h Legion.h LegionFactory.h LegionUnit.h OpenFieldArtillery.h OpenFieldCavalry.h OpenFieldFactory.h OpenFieldInfantry.h RiverbankArtillery.h RiverbankCavalry.h RiverbankFactory.h RiverbankInfantry.h TacticalMemento.h WarArchives.h WoodlandArtillery.h WoodlandCavalry.h WoodlandFactory.h WoodlandInfantry.h
 OUT	= a.out
 FLAGS	= -g3 -c -Wall
@@ -11,8 +11,8 @@ all:	a.out
 a.out: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
 
-TestingMain.o: TestingMain.cpp
-	$(CC) $(FLAGS) TestingMain.cpp -lcppunit
+DemoMain.o: DemoMain.cpp
+	$(CC) $(FLAGS) DemoMain.cpp -lcppunit
 
 Ambush.o: Ambush.cpp
 	$(CC) $(FLAGS) Ambush.cpp -lcppunit
