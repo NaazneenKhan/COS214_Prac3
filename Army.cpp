@@ -1,5 +1,6 @@
 #include "Army.h"
 #include <iostream>
+#include <algorithm>
 #include "Legion.h"
 
 Army::Army(LegionFactory* factory)

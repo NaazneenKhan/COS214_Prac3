@@ -15,3 +15,7 @@ Artillery* LegionFactory::createArtillery() {
 	// TODO - implement LegionFactory::virtual createArtillery
 	throw "Not yet implemented";
 }
+
+LegionFactory::~LegionFactory()
+{
+}

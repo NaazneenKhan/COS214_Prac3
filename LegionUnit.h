@@ -12,6 +12,8 @@ public:
 	void add(LegionUnit* component);
 
 	void remove(LegionUnit* component);
+
+	virtual ~LegionUnit() ;
 };
 
 #endif

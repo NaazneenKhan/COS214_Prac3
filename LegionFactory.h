@@ -12,7 +12,8 @@ public:
 	virtual Cavalry* createCavalry() = 0;
 
 	virtual Artillery* createArtillery() = 0;
-
+    
+	virtual ~LegionFactory();
 	
 };
 
