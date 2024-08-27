@@ -1,4 +1,5 @@
 #include "Legion.h"
+#include <algorithm> 
 
 Legion::~Legion()
 {
@@ -16,10 +17,10 @@ void Legion::move()
 }
 
 
-void Legion::attack()
+void Legion::attack(int legionSize)
 {
     for (auto unit : units) {
-		unit->attack();
+		unit->attack(legionSize);
 	}
 }
 

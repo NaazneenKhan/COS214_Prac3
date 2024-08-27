@@ -14,7 +14,7 @@ public:
 
 	void move();
 
-	void attack();
+	void attack(int legionSize);
 
 	void add(LegionUnit* component);
 
